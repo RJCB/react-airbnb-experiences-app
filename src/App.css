@@ -13,9 +13,6 @@ nav {
   display: flex;
   flex-direction: column;
 }
-.hero-image {
-  margin: 40px 10vh 0;
-}
 
 .hero-header, .hero-text {
   margin: 0 5vh;
@@ -23,7 +20,6 @@ nav {
 .hero-header {
   font-size: 36px;
   font-weight: 500;
-  margin-top: 40px;
 }
 .hero-text {
   font-size: 14px;
@@ -33,4 +29,85 @@ nav {
   width: 290px;
   text-align: justify;
   line-height: 18px;
+}
+.card {
+  max-width: 210px;
+  font-size: 14px;
+  font-weight: 400;
+  /* justify-self: center; */
+  margin: 0 20px;
+  position: relative;
+}
+.card-stats {
+  letter-spacing: 1px;
+}
+.card-image {
+  height: 280px;
+  border-radius: 9px;
+}
+.card-star-image {
+  width: 15px;
+}
+.bold-text {
+  font-weight: 500;
+}
+.card-review-count, .card-country {
+  font-weight: 100;
+}
+.cards {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  grid-gap: 1rem; */
+  display: flex;
+  overflow-x: scroll;
+  text-align: center;
+}
+.card-badge {
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 2px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 991px) {
+  .hero-image, .cards {
+    margin: 40px 7vw 0;
+  }
+  .hero-text {
+    margin: 0 7vw;
+  }
+  .hero-header {
+    margin: 40px 7vw 0;
+  }
+  .hero-header {
+    font-size: 24px;
+  }
+  .hero-text {
+    font-size: 12px;
+  }
+}
+/* media queries */
+@media screen and (min-width: 992px) {
+  .hero-image, .cards {
+    margin: 40px 15vw 0;
+  }
+  .hero-text {
+    margin: 0 15vw;
+  }
+  .hero-header {
+    margin: 40px 15vw 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero-image, .cards {
+    margin: 40px 12vw 0;
+  }
+  .hero-header, .hero-text {
+    margin-left: 12vw;
+    margin-right: 12vw;
+  }
 }
